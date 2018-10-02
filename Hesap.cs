@@ -31,13 +31,13 @@ namespace BankamatikProje
             }
         }
 
-        public  void ParaCek()
+        public  void ParaCek(int ucret)
         {
-            Bakiye = Bakiye - 10; //parayı hesaptan düştük
+            Bakiye = Bakiye - ucret; //parayı hesaptan düştük
         }
-        public  void ParaYatir()
+        public  void ParaYatir(int ucret)
         {
-            Bakiye = Bakiye + 10; //para
+            Bakiye = Bakiye + ucret; //para
         }
     }
 }

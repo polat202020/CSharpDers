@@ -29,14 +29,13 @@
 
             
 
-            <Button x:Name="btn10Cek" Content="10 TL ÇEK" Grid.Row="0" Grid.Column="0" Height="auto" Click="btn10Cek_Click"/>
-            <Button Content="20 TL ÇEK" Grid.Row="1" Grid.Column="0" Height="auto"/>
-            <Button Content="30 TL ÇEK" Grid.Row="2" Grid.Column="0" Height="auto"/>
+            <Button x:Name="btn10Cek" Content="10 TL ÇEK" Grid.Row="0" Grid.Column="0" Height="auto" Click="btnCek_Click"/>
+            <Button x:Name="btn20Cek"  Content="20 TL ÇEK" Grid.Row="1" Grid.Column="0" Height="auto" Click="btnCek_Click"/>
+            <Button x:Name="btn30Cek"  Content="30 TL ÇEK" Grid.Row="2" Grid.Column="0" Height="auto" Click="btnCek_Click"/>
 
-            <Button x:Name="btn10Yatir" Content="10 TL YATIR" Grid.Row="0" Grid.Column="1" Height="auto" Click="btn10Yatir_Click"
-                    />
-            <Button Content="20 TL YATIR" Grid.Row="1" Grid.Column="1" Height="auto"/>
-            <Button Content="30 TL YATIR" Grid.Row="2" Grid.Column="1" Height="auto"/>
+            <Button x:Name="btn10Yatir" Content="10 TL YATIR" Grid.Row="0" Grid.Column="1" Height="auto" Click="btnYatir_Click"/>
+            <Button x:Name="btn20Yatir"  Content="20 TL YATIR" Grid.Row="1" Grid.Column="1" Height="auto"  Click="btnYatir_Click"/>
+            <Button x:Name="btn30Yatir"  Content="30 TL YATIR" Grid.Row="2" Grid.Column="1" Height="auto"  Click="btnYatir_Click"/>
         </Grid>
        
 

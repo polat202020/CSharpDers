@@ -32,13 +32,28 @@ namespace BankamatikProje
        
 
 
-        private void btn10Cek_Click(object sender, RoutedEventArgs e)
+        private void btnCek_Click(object sender, RoutedEventArgs e)
         {
             try
             {
+                var btn = sender as Button;
+                switch (btn.Name)
+                {
+                    case "btn10Cek":
+                        OguzunHesabi.ParaCek(10);
+                        break;
+                    case "btn20Cek":
+                        OguzunHesabi.ParaCek(20);
+                        break;
+                    case "btn30Cek":
+                        OguzunHesabi.ParaCek(30);
+                        break;
+                    default:
+                        MessageBox.Show("Hatalı işlem");
+                        break;
+                }
 
-
-                OguzunHesabi.ParaCek();
+              
                 BakiyeGoster();
             }
             catch (Exception ex)
@@ -51,10 +66,27 @@ namespace BankamatikProje
 
       
 
-        private void btn10Yatir_Click(object sender, RoutedEventArgs e)
+        private void btnYatir_Click(object sender, RoutedEventArgs e)
         {
+            var btn = sender as Button;
+            switch (btn.Name)
+            {
+                case "btn10Yatir":
+                    OguzunHesabi.ParaYatir(10);
+                    break;
+                case "btn20Yatir":
+                    OguzunHesabi.ParaYatir(20);
+                    break;
+                case "btn30Yatir":
+                    OguzunHesabi.ParaYatir(30);
+                    break;
+                default:
+                    MessageBox.Show("Hatalı işlem");
+                    break;
+            }
 
-            OguzunHesabi.ParaYatir();
+
+        
             BakiyeGoster();
         }
 
