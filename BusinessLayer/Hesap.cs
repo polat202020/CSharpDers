@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BankamatikProje
+namespace BusinessLayer
 {
-   public  class Hesap
+    public class Hesap
     {
         //Constracter
         public Hesap()
@@ -15,7 +15,7 @@ namespace BankamatikProje
         }
         //Encapsulation
         private int _bakiye;
-        public  int Bakiye
+        public int Bakiye
         {
             get
             {
@@ -31,11 +31,11 @@ namespace BankamatikProje
             }
         }
 
-        public  void ParaCek(int ucret)
+        public void ParaCek(int ucret)
         {
             Bakiye = Bakiye - ucret; //parayı hesaptan düştük
         }
-        public  void ParaYatir(int ucret)
+        public void ParaYatir(int ucret)
         {
             Bakiye = Bakiye + ucret; //para
         }
